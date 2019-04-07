@@ -1,0 +1,66 @@
+<!--OUTSCRIPT COMMENTS-->
+<!doctype html>
+<html lang = "en">
+    <head> 
+        <form action = "#" id="sampleForm">
+            <!-- <img src="bobs_burguer_3.jpg" id="logo"> -->
+            <input id = 'charInput' type="text">
+
+            <p id="keyData">Key Data Here</p>
+            <p>Welcome</p>
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+            <br /><br />
+            <img src="mslug.png" id = "marco"><br />
+            <button>GetButton</button> <br />
+
+            <input id='mouseInput' type = "text" size = "30"><br />
+            Mouse X: <input id='mouseX' type="text"><br />
+            Mouse Y: <input id='mouseY' type="text"><br />
+        </form><br />
+
+        <script>
+            // funcao para lidar com Internet explorer ou outro browser
+            function getChar(event){
+                if(event.which/*retorna o key pressionado*/==null){
+                    return String.fromCharCode(event.keyCode);
+                }else if(event.which != 0 && event.charCode != 0){
+                    return String.fromCharCode(event.which);
+                }else{
+                    return null;
+                }
+            }
+
+            document.getElementById('charInput').onkeypress = 
+            function(event){
+                var char = getChar(event || window.event)
+                if(!char) return false;
+                document.getElementById('keyData').innerHTML = char + 
+                " was clicked";
+                return true;
+            }
+
+            document.getElementById('charInput').onselect = 
+            function(event){
+                document.getElementById('keyData').innerHTML = "Text"  
+                  + " was selected";
+            }
+
+            document.getElementById('marco').onmousedown = 
+            function(event){
+                document.getElementById('marco').src = "mslug270.png ";
+            }
+            
+            document.getElementById('marco').onmouseup = 
+            function(event){
+                document.getElementById('marco').src = "mslug.png ";
+            }
+            
+
+
+        </script>  
+    </body>
+</html>
+
+
+   

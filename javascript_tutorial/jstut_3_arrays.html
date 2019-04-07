@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang = "en">
+    <head>
+        <meta charset="utf-8">
+        <script src="jstut.js"></script>
+        <style type="text/css">
+            body{font-size: 1.6em;}
+            .hidden {display:none;}
+            .show{display:inline !important;}
+            button{
+                border: 2px solid black; background:  white;
+                font-size: 5.em; font-weight: bold; color: black;
+                padding: .8em 2em;
+                margin-top: .4em;
+            }
+        </style>
+    </head>
+    
+    <body> 
+        <script>
+          var tom_smith = ["Tom Smith", "123 Main", 200]
+          for(i in tom_smith){
+            document.write(tom_smith[i], " <br />")
+          }
+
+          //splice(apartir de qual indice,quantos vou substituir,substituicao)
+          tom_smith.splice(0,1,"Thomas Jones Smith")
+
+          for(i in tom_smith){
+            document.write(tom_smith[i], " <br />")
+          }
+
+          
+          var numbers = [4, 23, 11, 100, -3]
+          
+          numbers.sort(function(x, y){ return x - y }) //ascending
+          document.write(numbers, " <br />")
+          numbers.sort(function(x, y){ return y - x }) //descending
+          document.write(numbers, " <br />")
+          
+          var combine = numbers.concat(tom_smith)
+          document.write(combine, " <br />")
+          
+          document.write("", " <br />")
+        </script>
+    </body>
+</html>
+
+
+   

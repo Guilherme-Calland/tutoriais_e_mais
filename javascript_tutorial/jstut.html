@@ -1,0 +1,76 @@
+<!--OUTSCRIPT COMMENTS-->
+<!doctype html>
+<html lang = "en">
+    <head>
+    </head> 
+    <body>
+        <script>
+            var cust1 = {
+                name: "John Smith",
+                street: "123 Main",
+                city: "Pittsburg",
+                state: "PA",
+                email: "jsmith@aol.com",
+                balance: 120.50,
+                payDownBal: function(amtPaid){
+                    this.balance -= amtPaid;
+                },
+                addToBal: function(amtCharged){
+                    this.balance += amtCharged;
+                }
+            };
+
+            document.write("Customer 1: ", cust1.name,"<br />")
+
+            cust1.country = "USA"
+
+            document.write(cust1.name," ")
+            document.write(cust1.country,"<br /><br />")
+            
+            // for(var i in cust1){
+            //     if(cust1.hasOwnProperty(i)){
+            //         document.write(i,"<br />")
+            //     }
+            // }
+
+            cust1.payDownBal(20.50);
+            cust1.addToBal(10.00);
+
+            function getInfo(cust){
+                return "Name: " +  cust.name + "<br />"
+                     + "Street: " + cust.street + "<br />"
+                     + "Balance: " + cust.balance + "<br />"
+            }
+
+            document.write(getInfo(cust1))
+
+            //constructor
+            function Customer(name, street, city, state, email, balance){
+                this.name = name;
+                this.street = street;
+                this.city = city;
+                this.state = state;
+                this.email = email;
+                this.balance = balance;
+                this.payDownBal = function(amtPaid){
+                    this.balance -= amtPaid;
+                };
+                this.addToBal = function(amtCharged){
+                    this.balance += amtCharged;
+                };
+            }
+                var cust2 = new Customer("Sallay Smith", "234 Main", "Pittsburg", 
+                "PA", "ssmith@aol.com" , 0.00  );
+                
+                document.write("<br />", getInfo(cust2),"<br />")
+                cust2.addToBal(50.50);
+                document.write("<br />", getInfo(cust2),"<br />")
+
+
+
+        </script>  
+    </body>
+</html>
+
+
+   

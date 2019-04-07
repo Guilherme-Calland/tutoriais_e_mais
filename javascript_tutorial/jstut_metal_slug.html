@@ -1,0 +1,82 @@
+<!--OUTSCRIPT COMMENTS-->
+<!doctype html>
+<html lang = "en">
+    <head>
+    </head> 
+    <br /><br />
+
+
+    <p id = "title" ></p>
+    <img src = "marco.png" id = "marco" width = "100">
+    <img src = "eri.png"   id = "eri" width = "100">
+    <img src = "tarma.png" id = "tarma" width = "120">
+    <img src = "fio.png"   id = "fio" width = "100">
+    <img src = "prisoner.png"   id = "prisoner" width = "100">
+    <br /><br />
+    <p id = "caracter"></p>
+
+    
+    <body>
+        <script>
+            
+            //TITLE
+            document.getElementById('title').innerHTML = "Metal Slug".big().bold();
+            //MARCO
+            document.getElementById('marco').onmousedown = 
+            function(event){
+                document.getElementById('marco').src = "marco270.png ";
+                document.getElementById('caracter').innerHTML = "MARCO!"
+            }
+            document.getElementById('marco').onmouseup = 
+            function(event){
+                document.getElementById('marco').src = "marco.png ";
+            }
+            //ERI
+            document.getElementById('eri').onmousedown =
+            function(event){
+                document.getElementById('eri').src = "eri270.png"
+                document.getElementById('caracter').innerHTML = "ERI!"
+            }
+            document.getElementById('eri').onmouseup = 
+            function(event){
+                document.getElementById('eri').src = "eri.png"
+            }
+            //TARMA
+            document.getElementById('tarma').onmousedown =
+            function(event){
+                document.getElementById('tarma').src = "tarma270.png"
+                document.getElementById('caracter').innerHTML = "TARMA!"
+            }
+            document.getElementById('tarma').onmouseup = 
+            function(event){
+                document.getElementById('tarma').src = "tarma.png"
+            }
+            //FIO
+            document.getElementById('fio').onmousedown =
+            function(event){
+                document.getElementById('fio').src = "fio270.png"
+                document.getElementById('caracter').innerHTML = "FIO!"
+            }
+            document.getElementById('fio').onmouseup = 
+            function(event){
+                document.getElementById('fio').src = "fio.png"
+            }
+            //PRISONER
+            document.getElementById('prisoner').onmousedown =
+            function(event){
+                document.getElementById('prisoner').src = "prisoner270.png"
+                document.getElementById('caracter').innerHTML = "THANK YOU!"
+            }
+            document.getElementById('prisoner').onmouseup = 
+            function(event){
+                document.getElementById('prisoner').src = "prisoner.png"
+            }
+
+
+
+        </script>  
+    </body>
+</html>
+
+
+   

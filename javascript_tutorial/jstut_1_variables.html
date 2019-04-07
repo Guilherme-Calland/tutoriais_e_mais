@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang = "en">
+    <head>
+        <meta charset="utf-8">
+        <script src="jstut.js"></script>
+        <style type="text/css">
+            body{font-size: 1.6em;}
+            .hidden {display:none;}
+            .show{display:inline !important;}
+            button{
+                border: 2px solid black; background:  white;
+                font-size: 5.em; font-weight: bold; color: black;
+                padding: .8em 2em;
+                margin-top: .4em;
+            }
+        </style>
+    </head>
+    
+    <body> 
+        <script>
+            var myName = "Guilherme"
+            var myAge = 26
+
+            document.write("5 + 4 = "+ (5 + 4) + "<br />"/*break*/);
+            document.write("5 + 4 = "+ (5 - 4) + "<br />"/*break*/);
+            document.write("5 + 4 = "+ (5 * 4) + "<br />"/*break*/);
+            document.write("5 + 4 = "+ (5 / 4) + "<br />"/*break*/);
+            document.writeln("5 + 4 = "+ (5 % 4) + "<br />\n"/*break*/);
+
+            document.write(22.222222.toFixed(3), "<br />")//3 numeros depois da virgula
+            
+            var x = 4;
+            document.write(++x,", ");
+            document.write(++x,", ");
+            document.write(++x,", ");
+            document.write(++x,", ");
+            document.write(++x,", ");
+            document.write(++x,", ");
+            document.write(--x,", ");
+            document.write(--x,", ");
+            document.write(--x,", ");
+            document.write(--x,", ");
+            document.write(--x,", ");
+            document.write(--x,", ");
+            document.write(--x,", ");
+            document.write(--x,", ");
+            document.write(--x,", ");
+            document.write(--x,", ");
+
+            document.write("<br />", Math.pow(4, 2),"<br />")
+            //converter de string para numero
+            var num = "50"
+            document.write(num, "<br />");
+            document.write(Number("50"), "<br />");
+
+            var randString = "um string" + " bastante longo.";
+            document.write(randString , " tamanho desse string: ",
+            randString.length," letras <br />");
+
+            //document.write("","<br />")
+
+            //escolher quais caratres pegar (slice)
+            document.write(randString.slice(3),"<br />")
+            document.write(randString.slice(3,9),"<br />")
+            document.write(randString.slice(10,19),"<br />")
+            //pegando o temanho da palavra (9)
+            document.write(randString.substr(10,9),"<br />")
+            //substituir
+            document.write("replace: ",
+            randString.replace("string","palavreado"),"<br />")
+
+            document.write(randString.toUpperCase(),"<br />")
+            document.write(randString.toLowerCase(),"<br />")
+
+            document.write("a","<br />")
+
+            var words = "words words words"
+
+            document.write("Big: ", words.big(), "<br />")
+            document.write("Bold: ", words.bold(), "<br />")
+            document.write("Font Color", words.fontcolor("blue"),"<br />")
+            document.write("Font Size: ", words.fontsize("20em"),"<br />")
+            document.write("Italics: ", words.italics(),"<br />")
+            document.write("Google link: ", words.link("http://google.com"),"<br />")
+            document.write("Small: ", words.small(),"<br />")
+            document.write("Strike: ", words.strike(),"<br />")
+            document.write("Sub", words.sub(),"<br />")
+            document.write("Sup", words.sup(),"<br />")
+            document.write("", words,"<br />")
+            document.write("", words,"<br />")
+            document.write("", words,"<br />")
+            document.write("", words,"<br />")
+            document.write("", words,"<br />")
+            document.write("", words,"<br />")
+            document.write("","<br />")
+
+
+
+        </script>
+    </body>
+</html>
+
+
+   
