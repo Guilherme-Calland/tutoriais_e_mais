@@ -1,0 +1,23 @@
+notes
+
+ctrl + shift + c --> abre o prompt naquela pasta
+selecionar uma parte do código depois 
+alt + setas faz mover aquela parte
+
+o maior problema desse projeto é procurar e achar os bugs, é o que 
+levou mais tempo. Sem isso o projeto terminaria no minimo 
+5x mais rapido
+
+animação: o boneco interagindo com a fonte de luz,
+ele toca, ela muda de cor, ele joga ela no ar.
+
+se for fazer rasterizer depois(mais facil), deve haver 
+algum programa feito aquele que voce usou em jogos c++ para converter um desenho 3d
+que voce faz(feito de triângulos estilo smash) em posições Vec3
+
+fazer um teapot(rasterizer).
+naquele tutorial ensina a fazer cubos e piramides.
+
+jogo simples(serve p criança ou idoso) : a cor do inimigo é a cor do botao
+do joystick que contra-ataca o mesmo. com o aumento da dificuldade os
+inimigos podem mudar de cor durante a batalha
