@@ -1,0 +1,92 @@
+npm install -g @angular/cli
+caso nao funcione só dê npm install sem ser global
+
+-g --> global.
+sudo npm install para executar como administrador
+
+
+front-end : client, user interface (UI)
+
+API : aplication program interface  
+
+back end : Data + APIs
+
+npm : node package manager
+
+.gitignore : para o git ignorar alguns arquivos
+
+dir em bash : ls
+
+tsc:typescript compiler
+
+rm nome_arquivo --> remove arquivo
+
+##############
+
+ng new hello-world
+cd hello-world
+ng serve
+
+abra no vs code
+
+abra app.component.ts e app.component.html
+brinque com o titulo "title" em arquivo ts
+e depois pelo arquivo html
+
+npm install -g typescript
+
+mkdir ts-hello
+cd ts-hello
+code main.ts
+
+
+tsc main.ts --> isso cria um arquivo js
+
+faz ls(linux) ou dir(windows) para ver todos os arquivos
+
+node main.js --> aparece o hello world no console
+
+COMPONENTS: App, Navbar, Courses, Sidebar
+
+MODULES: Container for group of related components
+
+How to create a component:
+
+1) create a component
+
+2) register in a module
+
+3) Add an element in an HTML markup
+
+###############
+
+create a new file in app : courses.component.ts
+
+register in app.module
+
+abra app.component.html
+
+se remover CoursesComponent de app.module.ts não aparece nada
+na sua página.
+
+criar um component chamado course pelo bash: 
+ng g c course
+c = components
+
+abrir courses.component.ts (courses msm)
+
+criar um serviço : em app: courses.service.ts
+
+
+criar um serviço chamado email pelo bash:
+ng g s email
+s = service
+
+lembrar de usar o autoimport-->quando tiver digitando um nome 
+e aparecer sugestões use o que tiver auto import!
+
+siga as instruções e nao esqueça do auto-import que dá pra 
+fazer o exercicio facil!
+
+
+
