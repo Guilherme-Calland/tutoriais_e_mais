@@ -6,7 +6,7 @@ type person struct{
 	name string
 }
 
-type human interface{
+type human interface{ /*todo tipo de objeto que tiver os métodos aqui dentro, será do tipo human*/
     speak()
 }
 
@@ -28,8 +28,12 @@ func (c car) speak(){ //agora todo objeto car é do tipo human
 }
 
 func main(){
-	p1 := person{"Gui"} //p1 agora é do tipo person
-	p1.speak() //p1 agora é do tipo human (além de ser person)
+	p1 := person{"Gui"} 
+	p1.speak() 
 
-	foo(p1) 
+	c1 := car{"blue"}
+
+	foo(p1)
+	foo(c1)
+	 
 }
