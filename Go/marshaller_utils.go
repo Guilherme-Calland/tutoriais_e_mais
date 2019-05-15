@@ -3,18 +3,19 @@ package utils
 import (
 	"bytes"
 	"encoding/binary"
-	"encoding/json"
+	"encoding/gob"
 )
 
 //CODIGO DOS CARA
 
 /*
-Marshall retorna a versao serializada em JSON de value
+Marshall retorna a versao serializada em gob de value
 */
 
+//marshall transforma o objeto value e retorna um array de bytes
 func Marshall(value interface{}) ([]byte, error) {
 	var buf bytes.Buffer
-	enc := json.NewEncoder(&buf)
+	enc := gob.NewEncoder(&buf)
 	enc.Encode(value)
 
 	bs := make([]byte, 4)
@@ -22,9 +23,10 @@ func Marshall(value interface{}) ([]byte, error) {
 	return append(bs, buf.Bytes()...), nil
 }
 
+//
 func Unmarshall(value []byte, ref interface{}) error {
 	buf := bytes.NewBuffer(value)
-	dec := json.NewDecoder(buf)
+	dec := gob.NewDecoder(buf)
 	return dec.Decode(ref)
 }
 
@@ -47,6 +49,9 @@ func main(){
 	enc := json.NewEncoder(buf) // criamos um encoder, um buffer para armazenar o documento json
 	enc.Encode(user) //armazenamos o user no nosso buffer
 	io.Copy(os.Stdout, buf) // imprime na tela oq esta no buffer
+
+	//console : "John Doe change me johndoe@gmail.com"   --> do println(user)
+	//          {{"UserName":"JohnDoe","password":"change me","email":"johndoe@gmail.com"}} --> json file
 
 }
 
