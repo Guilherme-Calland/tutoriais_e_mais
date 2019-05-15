@@ -23,12 +23,16 @@ func Marshall(value interface{}) ([]byte, error) {
 	return append(bs, buf.Bytes()...), nil
 }
 
-//
+//armazena o array de bytes na variavel ref
 func Unmarshall(value []byte, ref interface{}) error {
 	buf := bytes.NewBuffer(value)
 	dec := gob.NewDecoder(buf)
 	return dec.Decode(ref)
 }
+
+
+//json tutorial (importante) --> https://www.youtube.com/watch?v=Osm5SCw6gPU
+//  https://www.youtube.com/watch?v=1uAydhVdMfQ   terminar de ver a parte do decoder
 
 //CODIGO DO TUTORIAL YOUTUBE
 
