@@ -25,9 +25,9 @@ func main() {
 
 	fmt.Println("\njson:\n", j)
 
-	funhaus := []person{}
+	group := []person{}
 
-	err := json.Unmarshal([]byte(j), &funhaus)
+	err := json.Unmarshal([]byte(j), &group)
 	if err != nil {
 		fmt.Println(err)
 	}
@@ -36,6 +36,6 @@ func main() {
 	//[]bytes(j) --> cria um slice de bytes a partir do string j,
 	// lembrando que um string nada mais é que uma sequencia de bytes
 
-	fmt.Println("\ngo data:\n", funhaus)
+	fmt.Println("\ngo data:\n", group)
 
 }

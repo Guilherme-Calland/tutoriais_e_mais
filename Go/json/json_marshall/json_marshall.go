@@ -34,12 +34,12 @@ func main() {
 		Last:  "Sontagg",
 	}
 
-	funhaus := []person{p1, p2, p3, p4} //slice de person
+	group := []person{p1, p2, p3, p4} //slice de person
 
-	fmt.Println("\ngo data:\n", funhaus)
+	fmt.Println("\ngo data:\n", group)
 
-	//marshall recebe um byte slice []byte e um erro error
-	byteSlice, err := json.Marshal(funhaus)
+	//marshall recebe um "person" slice e retorna um string slice (arquivo json)
+	byteSlice, err := json.Marshal(group)
 	if err != nil {
 		fmt.Println(err)
 	}

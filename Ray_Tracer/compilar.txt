@@ -1,0 +1,6 @@
+g++ main.cpp -o main
+
+main.exe
+
+
+bota no path --> C:\TDM-GCC-64\bin

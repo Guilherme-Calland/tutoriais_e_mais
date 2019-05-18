@@ -33,7 +33,7 @@ func Unmarshall(value []byte, ref interface{}) error {
 
 //json tutorial (importante) --> https://www.youtube.com/watch?v=Osm5SCw6gPU
 //  https://www.youtube.com/watch?v=1uAydhVdMfQ   marshall unmarshall code!!!
-//veja esse video depois para o projeto --> https://www.youtube.com/watch?v=xyoEqDlokw8&t=270s
+//projeto, clienthandler serverhandler --> https://www.youtube.com/watch?v=xyoEqDlokw8&t=270s
 
 //CODIGO DO TUTORIAL YOUTUBE
 
