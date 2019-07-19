@@ -247,11 +247,12 @@ Vec3 getReflectionIntersectionPosition(Ray ray, vector<Object*> objects){
 
 		reflection_limit++;
 
-		Vec3 n = objects.at(index_of_first_object)->getNormalAt(p_rflx);
-		Vec3 l = p - intersection_position;
-		d_rflx = 2*n*l.dotProduct(n) - l;
 
 		Vec3 p_rflx = intersection_position;
+		Vec3 l = p - p_rflx;
+		Vec3 n = objects.at(index_of_first_object)->getNormalAt(p_rflx);
+		Vec3 d_rflx = n*l.dotProduct(n)*2 - l;
+		
 		Ray rflx_ray = Ray(p_rflx, d_rflx);
 
 		return getReflectionIntersectionPosition(rflx_ray, objects);
