@@ -1,0 +1,3 @@
+:l -> load
+:r -> run
+:t (+) -- explica o que cada operacao faz
