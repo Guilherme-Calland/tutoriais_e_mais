@@ -1,3 +1,7 @@
 :l -> load
 :r -> run
 :t (+) -- explica o que cada operacao faz
+
+no ghc:
+let num7 = 7
+let triple x = x * 3
