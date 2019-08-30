@@ -1,0 +1,6 @@
+JDK - Java Development Kit
+
+JRE - Java Runtime Environment
+
+IDE - Integrated Development Environment
+
