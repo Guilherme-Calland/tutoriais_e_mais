@@ -4,3 +4,12 @@ JRE - Java Runtime Environment
 
 IDE - Integrated Development Environment
 
+#############
+
+aula 59:
+
+XML -> eXtensible Markup Language
+linguagem de marcacao
+
+
+
